@@ -1,0 +1,27 @@
+# Copy this file to local.properties in the demo folder.
+# Fill in your real MySQL password once. local.properties is gitignored.
+
+DATABASE_URL=jdbc:mysql://localhost:3306/ai_code_assistant?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+DATABASE_DRIVER=com.mysql.cj.jdbc.Driver
+DATABASE_USERNAME=root
+DATABASE_PASSWORD=your_mysql_password_here
+
+# Optional: keep these here too so you do not type them every time.
+# OPENAI_API_KEY=your_openai_api_key_here
+# JWT_SECRET=replace_with_a_long_random_secret_for_local_dev
+# JWT_REFRESH_EXPIRATION_MS=2592000000
+# FRONTEND_URL=http://localhost:3000
+# JUDGE0_BASE_URL=
+# JUDGE0_API_KEY=
+
+# Optional OAuth client credentials. Add a provider only when both values are real.
+# Empty OAuth client IDs will stop Spring Boot startup.
+#
+# spring.security.oauth2.client.registration.google.client-id=your_google_client_id
+# spring.security.oauth2.client.registration.google.client-secret=your_google_client_secret
+# spring.security.oauth2.client.registration.google.scope=openid,email,profile
+#
+# spring.security.oauth2.client.registration.github.client-id=your_github_client_id
+# spring.security.oauth2.client.registration.github.client-secret=your_github_client_secret
+# spring.security.oauth2.client.registration.github.scope=user:email,read:user
+#

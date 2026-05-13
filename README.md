@@ -1,4 +1,4 @@
-# AI Code Assistant Backend
+# CODE QUEST AI Backend
 
 Spring Boot backend for analyzing code snippets and uploaded source files with OpenAI-backed bug finding and fallback local analysis.
 
@@ -158,3 +158,40 @@ macOS or Linux:
 - If `OPENAI_API_KEY` is invalid, the service returns fallback analysis instead of crashing
 - Error messages are sanitized so API keys are not echoed back in responses
 - CORS is enabled on the controller for frontend integration
+
+## Frontend App
+
+A React + Vite frontend is included in `frontend/`.
+
+### Frontend Features
+
+- paste code for analysis
+- upload source files or zip archives
+- view bugs, explanation, fixed code, test ideas, and complexity notes
+- responsive layout for desktop and mobile
+
+### Run The Frontend
+
+From the `frontend` folder:
+
+Windows:
+
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
+
+macOS or Linux:
+
+```bash
+npm install
+npm run dev
+```
+
+The frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+Before starting the frontend, make sure the Spring Boot backend is already running on `http://localhost:8081`.

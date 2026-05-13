@@ -1,0 +1,54 @@
+{
+  "properties": [
+    {
+      "name": "openai.model",
+      "type": "java.lang.String",
+      "description": "OpenAI model used for code analysis and feedback."
+    },
+    {
+      "name": "openai.api-key",
+      "type": "java.lang.String",
+      "description": "OpenAI API key used by the backend AI client."
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Secret key used to sign JWT access tokens."
+    },
+    {
+      "name": "jwt.expiration-ms",
+      "type": "java.lang.Long",
+      "description": "JWT access token expiration time in milliseconds."
+    },
+    {
+      "name": "jwt.refresh-expiration-ms",
+      "type": "java.lang.Long",
+      "description": "Refresh token expiration time in milliseconds."
+    },
+    {
+      "name": "app.frontend-url",
+      "type": "java.lang.String",
+      "description": "Frontend base URL used for OAuth redirects."
+    },
+    {
+      "name": "judge0.base-url",
+      "type": "java.lang.String",
+      "description": "Base URL for the Judge0 code execution API."
+    },
+    {
+      "name": "judge0.api-key",
+      "type": "java.lang.String",
+      "description": "API key for the Judge0 provider."
+    },
+    {
+      "name": "judge0.host",
+      "type": "java.lang.String",
+      "description": "Host header value for the Judge0 provider."
+    },
+    {
+      "name": "spring.h2.console.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enables the H2 web console for local development."
+    }
+  ]
+}
